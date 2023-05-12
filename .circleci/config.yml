@@ -53,13 +53,13 @@ workflows:
               only: master
   sequential-reverse-job:
     jobs:
-      - "ruby-32"
+      - "ruby-27"
+          requires:
+            - "ruby-30"
       - "ruby-30":
-        requires:
-          - "ruby-32"
-      - "ruby-27":
-        requires:
-          - "ruby-30"
+          requires:
+            - "ruby-32"
+      - "ruby-32":
 
 
 
