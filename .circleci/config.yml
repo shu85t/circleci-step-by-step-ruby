@@ -59,7 +59,7 @@ workflows:
       - "ruby-30":
           requires:
             - "ruby-32"
-      - "ruby-32":
+      - "ruby-32"
 
 
 
